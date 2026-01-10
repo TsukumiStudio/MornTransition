@@ -1,7 +1,7 @@
 using System;
 using MornEnum;
 
-namespace MornTransition
+namespace MornLib
 {
     [Serializable]
     public sealed class MornTransitionType : MornEnumBase

@@ -3,7 +3,7 @@ using Cysharp.Threading.Tasks;
 using UnityEngine;
 using UnityEngine.UI;
 
-namespace MornTransition
+namespace MornLib
 {
     internal sealed class MornTransitionMaterial : MornTransitionBase
     {

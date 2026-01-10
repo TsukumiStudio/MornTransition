@@ -3,7 +3,7 @@ using MornEnum;
 using UnityEditor;
 using UnityEngine;
 
-namespace MornTransition
+namespace MornLib
 {
     [CustomPropertyDrawer(typeof(MornTransitionType))]
     internal class MornTransitionTypeDrawer : MornEnumDrawerBase

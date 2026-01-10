@@ -4,13 +4,13 @@ using Cysharp.Threading.Tasks;
 using MornEditor;
 using UnityEngine;
 
-namespace MornTransition
+namespace MornLib
 {
     public sealed class MornTransitionCtrl : MonoBehaviour
     {
-        [SerializeField] [ReadOnly] private bool _initialized;
-        [SerializeField] [ReadOnly] private List<MornTransitionBase> _allTransitions;
-        [SerializeField] [ReadOnly] private List<MornTransitionBase> _activeTransitions;
+        private bool _initialized;
+        private List<MornTransitionBase> _allTransitions;
+        private List<MornTransitionBase> _activeTransitions;
 
         private void Initialize()
         {

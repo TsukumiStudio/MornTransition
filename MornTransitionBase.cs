@@ -2,7 +2,7 @@ using System.Threading;
 using Cysharp.Threading.Tasks;
 using UnityEngine;
 
-namespace MornTransition
+namespace MornLib
 {
     public abstract class MornTransitionBase : MonoBehaviour
     {
