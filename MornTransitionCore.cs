@@ -1,12 +1,14 @@
 using System.Collections.Generic;
 using System.Threading;
 using Cysharp.Threading.Tasks;
+using UnityEngine;
 
 namespace MornLib
 {
-    public sealed class MornTransitionService : MornGlobalMonoBase<MornTransitionService>
+    [AddComponentMenu("")]
+    public sealed class MornTransitionCore : MornGlobalMonoBase<MornTransitionCore>
     {
-        protected override string ModuleName => "MornTransitionService";
+        protected override string ModuleName => "MornTransitionCore";
         private List<MornTransitionBase> _allTransitions;
         private List<MornTransitionBase> _activeTransitions;
 
