@@ -1,11 +1,9 @@
 using System.Collections.Generic;
 using System.Threading;
 using Cysharp.Threading.Tasks;
-using UnityEngine;
 
 namespace MornLib
 {
-    [AddComponentMenu("")]
     public sealed class MornTransitionCore : MornGlobalMonoBase<MornTransitionCore>
     {
         protected override string ModuleName => "MornTransitionCore";
