@@ -8,6 +8,7 @@ namespace MornLib
     internal sealed class MornTransitionFade : MornTransitionBase
     {
         [SerializeField] private Image _image;
+        [SerializeField] private SpriteRenderer _renderer;
         [SerializeField] private float _fillDuration;
         [SerializeField] private float _clearDuration;
 
@@ -51,9 +52,19 @@ namespace MornLib
 
         private void SetAlpha(float alpha)
         {
-            var color = _image.color;
-            color.a = alpha;
-            _image.color = color;
+            if (_image != null)
+            {
+                var color = _image.color;
+                color.a = alpha;
+                _image.color = color;
+            }
+
+            if (_renderer != null)
+            {
+                var color = _renderer.color;
+                color.a = alpha;
+                _renderer.color = color;
+            }
         }
     }
 }
